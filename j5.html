@@ -1,0 +1,25 @@
+<!-- javascript inbuilt funcyion
+1. JSON.parse() - converts a JSON string into a JavaScript object.
+2. JSON.stringify() - converts a JavaScript object into a JSON string. 
+-->
+
+<html>
+    <head>
+        <title>JSON Example</title>
+        <script>
+            var jsonString = '{"name": "John Doe", "age": 30, "city": "New York"}';
+            var jsonObject = JSON.parse(jsonString);
+            console.log("Name: " + jsonObject.name);
+            console.log("Age: " + jsonObject.age);
+            console.log("City: " + jsonObject.city);
+
+            var jsObject = {
+                name: "Jane Doe",
+                age: 25,
+                city: "Los Angeles"
+            };
+            var jsonStr = JSON.stringify(jsObject);
+            console.log("JSON String: " + jsonStr);
+        </script>
+    </head>
+</html>
