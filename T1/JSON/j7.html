@@ -1,0 +1,24 @@
+<!-- write a json string with date property and print date in ist while clicking on button   -->
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const obj = JSON.parse('{"name":"xyz", "age":17, "dob":"1997-03-14"}');
+
+      function fun() {
+        a = new Date(obj.dob);
+        document.write(a)
+        // console.log(a);
+      }
+    </script>
+  </head>
+  <body>
+    <!-- write one json string with date property yyyy-mm-dd and print and date in india standard time  -->
+    <button onclick="fun()" style="width: 200px; height: 100px">
+      Click ME 😏
+    </button>
+  </body>
+</html>
